@@ -8,7 +8,7 @@ nomeAdolescentes <- c("Ellen", "Ewerton", "Jamilly", "Letícya", "Natacha", "Kau
 
 #Vetor com o gênero dos adolescentes
 
-gêneroAdolescentes <- c("F", "M", "F", "F", "F", "M", "M", "M")
+generoAdolescentes <- c("F", "M", "F", "F", "F", "M", "M", "M")
 
 #Vetor com a cidade natal dos adolescentes
 
@@ -24,7 +24,12 @@ idadeAdolescentes <- round( age_calc( nascimentoAdolescentes, units = 'years'))
 
 #Data.frame com base nos vetores
 
-UniãoDeAdolescentes <- data.frame(
-  nome = nomeAdolescentes #nome dos adolescentes
-  gênero =
+listaAdolescentes <- data.frame(
+  nome = nomeAdolescentes, #nome dos adolescentes
+  gênero = generoAdolescentes, #gênero dos adolescentes
+  cidadeNatal = cidadeNatalAdolescentes, #cidade em que os adolescentes nasceram
+  dataNascimento = nascimentoAdolescentes, #data de nascimento dos adolescentes
+  idade = idadeAdolescentes #idade dos adolescentes
 )
+
+View(listaAdolescentes)
