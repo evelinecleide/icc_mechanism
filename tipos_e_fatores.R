@@ -16,3 +16,7 @@ valor <- c(25, 50, 30, 75, 90)
 (corBlusas <- reorder(corBlusas, valor))
 
 #a nova ordem ficou: cinza, branca e preta
+
+#reordenando a ordem apenas pela cor
+attr(corBlusas, "scores") <- NULL
+corBlusas
